@@ -9,3 +9,14 @@ pim_import_export:
 
 parameters:
     installer_data: PimInstallerBundle:minimal
+
+monolog:
+    handlers:
+        deprecation:
+            type: stream
+            path: '%kernel.logs_dir%/%kernel.environment%.deprecations.log'
+        deprecation_filter:
+            type: filter
+            handler: deprecation
+            max_level: warning
+            channels: ['php']
