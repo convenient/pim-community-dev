@@ -106,6 +106,7 @@
     - `Akeneo\Pim\Enrichment\Bundle\Command\ValidateObjectsCommand`
     - `Akeneo\Pim\Enrichment\Bundle\Command\ValidateProductCommand`
     - `Akeneo\Pim\Enrichment\Bundle\Command\AnalyzeProductCsvCommand`
+- Rename namespace `Akeneo\Pim\Enrichment\Component\Product\Factory\Value` into `Akeneo\Pim\Enrichment\Component\Product\Factory\Write\Value`
 
 ### CLI Commands
 
