@@ -41,7 +41,7 @@
 - Change constructor of `Akeneo\Pim\Enrichment\Bundle\EventSubscriber` to remove `$productClient` and `$productModelClient`.
 - Rename `Akeneo\Tool\Bundle\VersioningBundle\EventSubscriber\AddVersionSubscriber` as `Akeneo\Tool\Bundle\VersioningBundle\EventSubscriber\AddVersionListener`
 - Rename `Akeneo\UserManagement\Bundle\EventListener\UserPreferencesSubscriber` as `Akeneo\UserManagement\Bundle\EventListener\UserPreferencesListener`
-- Change constructor of `Akeneo\Pim\Enrichment\Bundle\EventSubscriber\LoadEntityWithValuesSubscriber` to remove `Symfony\Component\DependencyInjection\ContainerInterface` and to add `Akeneo\Pim\Enrichment\Component\Product\Factory\WriteValueCollectionFactory`
+- Change constructor of `Akeneo\Pim\Enrichment\Bundle\EventSubscriber\LoadEntityWithValuesSubscriber` to remove `Symfony\Component\DependencyInjection\ContainerInterface` and to add `Akeneo\Pim\Enrichment\Component\Product\Factory\Write\WriteValueCollectionFactory`
 - Change constructor of `Akeneo\Platform\Bundle\InstallerBundle\FixtureLoader\FixtureJobLoader` to remove `Symfony\Component\DependencyInjection\ContainerInterface` and to add:
     - `Akeneo\Tool\Component\StorageUtils\Saver\BulkSaverInterface`
     - `Akeneo\Tool\Component\StorageUtils\Remover\BulkRemoverInterface`
@@ -107,6 +107,7 @@
     - `Akeneo\Pim\Enrichment\Bundle\Command\ValidateProductCommand`
     - `Akeneo\Pim\Enrichment\Bundle\Command\AnalyzeProductCsvCommand`
 - Rename namespace `Akeneo\Pim\Enrichment\Component\Product\Factory\Value` into `Akeneo\Pim\Enrichment\Component\Product\Factory\Write\Value`
+- Move class `Akeneo\Pim\Enrichment\Component\Product\Factory\WriteValueCollectionFactory` to `Akeneo\Pim\Enrichment\Component\Product\Factory\Write\WriteValueCollectionFactory`
 
 ### CLI Commands
 
